@@ -12,7 +12,7 @@ open class ISTimeline: UIScrollView {
     
     fileprivate static let gap:CGFloat = 15.0
     
-    open var pointDiameter:CGFloat = 6.0 {
+    open var pointDiameter:CGFloat = 20.0 {
         didSet {
             if (pointDiameter < 0.0) {
                 pointDiameter = 0.0
@@ -42,8 +42,8 @@ open class ISTimeline: UIScrollView {
         }
     }
     
-    open var bubbleColor:UIColor = .init(red: 0.75, green: 0.75, blue: 0.75, alpha: 1.0)
-    open var titleColor:UIColor = .white
+    open var bubbleColor:UIColor = .clear
+    open var titleColor:UIColor = UIColor(red:0, green:0.15, blue:0.42, alpha:1)
     open var descriptionColor:UIColor = .gray
     
     open var points:[ISPoint] = [] {
